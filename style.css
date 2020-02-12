@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background: rgb(196, 182, 236);
+}
+.spinner {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform: rotate(3deg);
+  transform: rotate(0.3rad);
+  transform: rotate(3grad);
+  transform: rotate(0.03turn);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.exchange {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  margin: 20px 0;
+  font-size: 30px;
+}
+.subtitle {
+  margin-bottom: 10px;
+}
+.container {
+  background: rgb(214, 207, 235);
+  border-radius: 5px;
+}
+.rate,
+.currency {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rateBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(158, 13, 13);
+}
+select,
+input,
+button,
+.rateBox {
+  text-align: center;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(241, 241, 250);
+  font-weight: 600;
+  margin: 10px;
+  width: 100px;
+  height: 40px;
+  outline: none;
+}
+button:hover {
+  color: rgb(158, 13, 13);
+  background: rgb(229, 229, 246);
+  font-size: 1.05em;
+}
+button {
+  transition: 0.3s linear;
+  outline: none;
+  cursor: pointer;
+}
